@@ -1,0 +1,15 @@
+current directory: /media/matvey/ubuntu/projects/ruby_on_rails/learn/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.17.0/ext/bootsnap
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20231213-14049-2rs959.rb extconf.rb
+creating Makefile
+
+current directory: /media/matvey/ubuntu/projects/ruby_on_rails/learn/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /media/matvey/ubuntu/projects/ruby_on_rails/learn/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /media/matvey/ubuntu/projects/ruby_on_rails/learn/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20231213-14049-ry0t5k/bootsnap
