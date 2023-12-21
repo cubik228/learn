@@ -11,19 +11,18 @@ class QuestionsController < ApplicationController
     redirect_to questions_path
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @question.update(question_params)
-      redirect_to question_path(@question)
+      redirect_to question_path(@question, anchor: "answer-#{@answer.id}")
     else
       render :edit
     end
   end
 
   def index
-    @questions = Question.all
+    @questions = Question.order(created_at: :desc).page params[:page]
   end
 
   def new

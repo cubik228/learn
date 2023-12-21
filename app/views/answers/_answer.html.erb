@@ -1,0 +1,7 @@
+<article class="mb-3">
+  <p>
+    <%= sanitize answer.body %>
+  </p>
+  <%= link_to "edit", edit_question_answer_path(question, answer), method: :get, class: "btn btn-secondary mb-4" %>
+  <%= button_to "delete", question_answer_path(question, answer), method: :delete, class: "btn btn-danger", data: { confirm: "вы уверены?" } %>
+  </article>

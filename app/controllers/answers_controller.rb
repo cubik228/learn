@@ -11,6 +11,7 @@ class AnswersController < ApplicationController
       render 'questions/show'
     end
   end
+
   def edit
     @answer = @question.answers.find params[:id]
   end
@@ -23,12 +24,14 @@ class AnswersController < ApplicationController
       render :edit
     end
   end
+
   def destroy
     answer = @question.answers.find params[:id]
     answer.destroy
     flash[:success] = 'Answer delete'
     redirect_to question_path(@question)
   end
+
   private
 
   def answer_params
