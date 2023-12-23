@@ -5,6 +5,13 @@
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center justify-content-lg-start">
             <li><%= nav_tab "Home", root_path, class: "nav-link px-2 ",current_page:current_page %></li>
             <li><%= nav_tab "Questions", questions_path, class: "nav-link px-2 ",current_page:current_page  %></li>
+            <% if user_signed_in? %>
+              <li class="mt-2">
+                  <%= current_user.name %>
+              </li>
+            <% else %>
+              <li><%= nav_tab "Sing Up", new_user_path, class: "nav-link px-2 ",current_page:current_page  %></li>
+            <% end %>
           </ul>
       </nav>
     </div>
